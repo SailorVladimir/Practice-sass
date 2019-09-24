@@ -32,6 +32,16 @@ a {
   justify-content: space-between;
 }
 
+.section--light {
+  background-color: #f2f2f2;
+  color: #666d89;
+}
+
+.section--dark {
+  background-color: #303441;
+  color: #666d89;
+}
+
 header {
   color: #fff;
   background-color: #303441;
@@ -60,9 +70,7 @@ header {
 }
 
 .section--services {
-  color: #666d89;
   padding: 59px 0 36px;
-  background-color: #f2f2f2;
 }
 .section--services p {
   font-size: 18px;
@@ -93,8 +101,6 @@ header {
 }
 
 .section--portfolio {
-  background-color: #303441;
-  color: #666d89;
   padding: 58px 0 70px;
 }
 .section--portfolio p {
@@ -124,6 +130,41 @@ header {
 }
 .portfolio__img img {
   margin-top: 22px;
+}
+
+.section--aboutUs {
+  padding: 58px 0 71px;
+}
+.section--aboutUs p {
+  margin-top: 19px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.aboutUs__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+.aboutUs__cards img {
+  margin-bottom: 12px;
+}
+.aboutUs__cards p {
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 22px;
+}
+
+.aboutUs-card {
+  width: 32%;
+}
+
+.icon__list {
+  margin-top: 22px;
+}
+.icon__list a {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
