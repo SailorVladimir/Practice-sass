@@ -17,6 +17,8 @@ h3 {
     margin: 0;
 }
 
+
+
 a {
     text-decoration: none;
     color: #fff;
@@ -98,5 +100,44 @@ header {
         font-size: 12px;
         margin-top: 3px;
         line-height: 22px;
+    }
+}
+
+.section--portfolio {
+    background-color: #303441;
+    color: #666d89;
+    padding: 58px 0 70px;
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        padding-top: 5px;
+        margin-bottom: 14px;
+    }
+}
+
+.portfolio__link {
+    a {
+        color: #666d89;
+        border: 1px solid #666d89;
+        padding: 3px 7px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin-right: 5px;
+
+        &:hover {
+            color: #dedede;
+            border-color: #dedede;
+        }
+    }
+}
+
+.portfolio__img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    img {
+        margin-top: 22px;
     }
 }

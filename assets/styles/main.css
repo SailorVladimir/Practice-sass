@@ -92,4 +92,38 @@ header {
   line-height: 22px;
 }
 
+.section--portfolio {
+  background-color: #303441;
+  color: #666d89;
+  padding: 58px 0 70px;
+}
+.section--portfolio p {
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 5px;
+  margin-bottom: 14px;
+}
+
+.portfolio__link a {
+  color: #666d89;
+  border: 1px solid #666d89;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.portfolio__link a:hover {
+  color: #dedede;
+  border-color: #dedede;
+}
+
+.portfolio__img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio__img img {
+  margin-top: 22px;
+}
+
 /*# sourceMappingURL=main.css.map */
