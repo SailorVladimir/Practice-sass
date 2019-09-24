@@ -10,6 +10,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -51,6 +57,39 @@ header {
 }
 .menu li a:hover {
   color: #eb5055;
+}
+
+.section--services {
+  color: #666d89;
+  padding: 59px 0 36px;
+  background-color: #f2f2f2;
+}
+.section--services p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 47px;
+}
+
+.servicess__list {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.description {
+  margin-left: 21px;
+}
+.description p {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=main.css.map */
