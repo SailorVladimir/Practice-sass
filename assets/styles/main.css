@@ -260,4 +260,16 @@ header {
   margin-left: 14px;
 }
 
+footer {
+  padding: 22px 0;
+}
+footer a {
+  margin-left: 5px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -282,8 +282,22 @@ header {
         align-items: center;
         font-size: 12px;
         margin-bottom: 6px;
+
         div {
             margin-left: 14px;
         }
     }
+}
+
+footer {
+    padding: 22px 0;
+
+    a {
+        margin-left: 5px;
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 8px;
 }
