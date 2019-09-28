@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
 
+
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -75,6 +77,17 @@ header {
             }
         }
     }
+}
+
+.section__slide {
+    background-color: #eb5055;
+}
+
+.section__slide .slider__img {
+    background-image: url(../images/Slider.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .section--services {

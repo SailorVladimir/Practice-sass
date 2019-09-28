@@ -69,6 +69,17 @@ header {
   color: #eb5055;
 }
 
+.section__slide {
+  background-color: #eb5055;
+}
+
+.section__slide .slider__img {
+  background-image: url(../images/Slider.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .section--services {
   padding: 59px 0 36px;
 }
