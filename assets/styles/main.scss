@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
 
+@import 'sprites';
+
+@import 'slick-theme';
 
 
 body {
@@ -161,7 +164,7 @@ header {
     }
 }
 
-.section--aboutUs {
+.section--about-us {
     padding: 58px 0 71px;
 
     p {
@@ -171,7 +174,7 @@ header {
     }
 }
 
-.aboutUs__cards {
+.about-us__cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -188,7 +191,7 @@ header {
     }
 }
 
-.aboutUs-card {
+.about-us__card {
     width: 32%;
 }
 
@@ -296,8 +299,7 @@ header {
         font-size: 12px;
         margin-bottom: 6px;
 
-        div {
-            margin-left: 14px;
+        span {
         }
     }
 }
@@ -314,3 +316,5 @@ footer {
     font-size: 12px;
     margin-top: 8px;
 }
+
+@import 'media';

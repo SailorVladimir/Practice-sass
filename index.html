@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <link rel="stylesheet" href="/assets/styles/sprites.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="assets/styles/slick-theme.css">
     <title>Practice sass</title>
 </head>
 
@@ -32,7 +30,7 @@
         </div>
     </header>
 
-    <section class="section__slide">
+    <section class="section section__slide">
         <div class="slider">
             <div class="slider__img"></div>
             <div class="slider__img"></div>
@@ -40,7 +38,7 @@
     </section>
 
 
-    <section id="servicess" class="section--light section--services">
+    <section id="servicess" class="section section--light section--services">
         <div class="container">
             <h2>Our Services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -102,11 +100,11 @@
     </section>
 
 
-    <div id="portfolio" class="section--dark section--portfolio">
+    <div id="portfolio" class="section section--dark section--portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="portfolio__link">
+            <div class="portfolio__links">
                 <a href="#">All</a>
                 <a href="#">Web Design</a>
                 <a href="#">Graphic Design</a>
@@ -129,7 +127,7 @@
         </div>
     </div>
 
-    <div id="about" class="section--light section--aboutUs">
+    <div id="about" class="section section--light section--about-us">
         <div class="container">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
@@ -137,8 +135,8 @@
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
                 tortor
                 mauris condimentum nibh.</p>
-            <div class="aboutUs__cards">
-                <div class="aboutUs-card">
+            <div class="about-us__cards">
+                <div class="about-us__card">
                     <img src="/assets/images/photo_1.png" alt="photo">
                     <h3>Adam Jensen</h3>
                     <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor
@@ -152,7 +150,7 @@
                     </div>
 
                 </div>
-                <div class="aboutUs-card">
+                <div class="about-us__card">
                     <img src="/assets/images/photo_2.png" alt="photo">
                     <h3>Desmond Miles</h3>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
@@ -164,7 +162,7 @@
                         <a href="https://linkedin.com" class="icon icon--linkedIn"></a>
                     </div>
                 </div>
-                <div class="aboutUs-card">
+                <div class="about-us__card">
                     <img src="/assets/images/photo_3.png" alt="photo">
                     <h3>Scolara Visari</h3>
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
@@ -182,7 +180,7 @@
     </div>
 
 
-    <div id="contact" class="section--red section--form">
+    <div id="contact" class="section section--red section--form">
         <div class="container">
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -207,27 +205,29 @@
                         turpis, et consequat felis.
                     </p>
 
-                    <a class="contact__address" href="">
-                        <span class="icon icon--location"></span>
-                        <div>Elm St. 14/05 Lost City</div>
-                    </a>
+                    <div class="contact__feedback">
+                        <a href="#">
+                            <span class="icon icon--location"></span>
+                            <span>Elm St. 14/05 Lost City</span>
+                        </a>
 
-                    <a class="contact__tel" href="tel:035283318635">
-                        <span class="icon icon--tel"></span>
-                        <div>03528 331 86 35</div>
-                    </a>
+                        <a href="tel:035283318635">
+                            <span class="icon icon--tel"></span>
+                            <span>03528 331 86 35</span>
+                        </a>
 
-                    <a class="contact__mail" href="mailto:info@singolo.com">
-                        <span class="icon icon--mail"></span>
-                        <div>info@singolo.com</div>
-                    </a>
+                        <a href="mailto:info@singolo.com">
+                            <span class="icon icon--mail"></span>
+                            <span>info@singolo.com</span>
+                        </a>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="section--dark">
+    <footer class="section section--dark">
         <div class="container container--flex">
             <div class="copyright">© Copyright 2013 · by PSDchat.com</div>
             <div class="socials">
