@@ -5,6 +5,8 @@
 @import 'slick-theme';
 
 
+
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -32,7 +34,7 @@ a {
 .container {
     max-width: 940px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .container--flex {
@@ -82,15 +84,24 @@ header {
     }
 }
 
+#menu-btn{
+    display: none;
+}
+
 .section__slide {
     background-color: #eb5055;
 }
 
-.section__slide .slider__img {
-    background-image: url(../images/Slider.png);
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+.slider {
+    
+}
+
+
+.slick-slide img {
+    display: block;
+    margin: 59px auto; 
+    object-fit: contain;
+    height: auto;
 }
 
 .section--services {
@@ -110,7 +121,7 @@ header {
 
 }
 
-.servicess__list {
+.services__list {
     width: 32%;
     display: flex;
     justify-content: space-between;
@@ -138,7 +149,7 @@ header {
     }
 }
 
-.portfolio__link {
+.portfolio__links {
     a {
         color: #666d89;
         border: 1px solid #666d89;
@@ -156,7 +167,7 @@ header {
 
 .portfolio__img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     img {
@@ -176,7 +187,7 @@ header {
 
 .about-us__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 44px;
 
@@ -299,8 +310,7 @@ header {
         font-size: 12px;
         margin-bottom: 6px;
 
-        span {
-        }
+        span {}
     }
 }
 

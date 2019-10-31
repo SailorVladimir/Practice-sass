@@ -110,7 +110,6 @@
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
   width: 20px;
   line-height: 0px;
   font-size: 0px;
@@ -153,7 +152,7 @@
 }
 
 .slick-prev {
-  left: 480px;
+  left: calc(50% - 470px);
   z-index: 1;
 }
 [dir="rtl"] .slick-prev {
@@ -168,7 +167,7 @@
 }
 
 .slick-next {
-  right: 480px;
+  right: calc(50% - 470px);
 }
 [dir="rtl"] .slick-next {
   left: -25px;
@@ -270,7 +269,7 @@ a {
 .container {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .container--flex {
@@ -315,15 +314,19 @@ header {
   color: #eb5055;
 }
 
+#menu-btn {
+  display: none;
+}
+
 .section__slide {
   background-color: #eb5055;
 }
 
-.section__slide .slider__img {
-  background-image: url(../images/Slider.png);
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.slick-slide img {
+  display: block;
+  margin: 59px auto;
+  object-fit: contain;
+  height: auto;
 }
 
 .section--services {
@@ -341,7 +344,7 @@ header {
   margin-top: 47px;
 }
 
-.servicess__list {
+.services__list {
   width: 32%;
   display: flex;
   justify-content: space-between;
@@ -367,7 +370,7 @@ header {
   margin-bottom: 14px;
 }
 
-.portfolio__link a {
+.portfolio__links a {
   color: #666d89;
   border: 1px solid #666d89;
   padding: 3px 7px;
@@ -375,14 +378,14 @@ header {
   font-size: 12px;
   margin-right: 5px;
 }
-.portfolio__link a:hover {
+.portfolio__links a:hover {
   color: #dedede;
   border-color: #dedede;
 }
 
 .portfolio__img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .portfolio__img img {
@@ -400,7 +403,7 @@ header {
 
 .about-us__cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 44px;
 }
@@ -544,9 +547,22 @@ footer a {
   .form {
     min-width: 490px;
   }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .slick-slide img {
+    width: 80%;
+  }
 }
 @media (max-width: 768px) {
-  .servicess__list {
+  .services__list {
     width: 50%;
   }
 
@@ -563,8 +579,9 @@ footer a {
   }
 }
 @media (max-width: 576px) {
-  header .container--flex {
-    flex-direction: column;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo {
@@ -572,6 +589,7 @@ footer a {
   }
 
   .menu {
+    display: none;
     flex-direction: column;
     text-align: center;
     padding: 0;
@@ -579,15 +597,15 @@ footer a {
     font-size: 18px;
   }
   .menu li {
-    margin: 5px 0;
+    margin: 15px 0;
   }
 
-  .servicess__list {
+  .services__list {
     width: 100%;
   }
 
   .portfolio__links a {
-    padding: 3px 6px;
+    padding: 3px 2px;
   }
 
   .about-us__card img {
@@ -620,6 +638,221 @@ footer a {
     flex-direction: column-reverse;
     text-align: center;
   }
+  footer .socials {
+    margin-top: 10px;
+  }
+
+  /********************************* Hamburger Menu Start ********************************************/
+  @keyframes topBar_open {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+      width: 40px;
+    }
+    10% {
+      transform: translateY(-8px) rotate(0deg);
+      width: 40px;
+    }
+    50% {
+      transform: translateY(-3px) rotate(45deg);
+      width: 64px;
+    }
+    75% {
+      transform: translateY(-4px) rotate(45deg);
+      width: 64px;
+    }
+    100% {
+      transform: translateY(-5px) rotate(45deg);
+      width: 64px;
+    }
+  }
+  @keyframes bottomBar_open {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+      width: 40px;
+    }
+    10% {
+      transform: translateY(-15px) rotate(0deg);
+      width: 40px;
+    }
+    60% {
+      transform: translateY(-23px) rotate(-45deg);
+      width: 64px;
+    }
+    75% {
+      transform: translateY(-24px) rotate(-45deg);
+      width: 64px;
+    }
+    100% {
+      transform: translateY(-25px) rotate(-45deg);
+      width: 64px;
+    }
+  }
+  @keyframes menuLabel_open {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    45% {
+      transform: translateY(44px);
+      opacity: 1;
+    }
+    48% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+  }
+  @keyframes topBar_close {
+    0% {
+      transform: translateY(17px) rotate(45deg);
+      width: 64px;
+    }
+    35% {
+      transform: translateY(-8px) rotate(-4deg);
+      width: 40px;
+    }
+    53% {
+      transform: translateY(10px) rotate(3deg);
+      width: 40px;
+    }
+    70% {
+      transform: translateY(-6px) rotate(0deg);
+      width: 40px;
+    }
+    100% {
+      transform: translateY(-2px) rotate(0deg);
+      width: 40px;
+    }
+  }
+  @keyframes bottomBar_close {
+    0% {
+      transform: translateY(-8px) rotate(-45deg);
+      width: 64px;
+    }
+    35% {
+      transform: translateY(-18px) rotate(6deg);
+      width: 40px;
+    }
+    53% {
+      transform: translateY(0px) rotate(-3deg);
+      width: 40px;
+    }
+    68% {
+      transform: translateY(-7px) rotate(0deg);
+      width: 40px;
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+      width: 40px;
+    }
+  }
+  @keyframes menuLabel_close {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    5% {
+      transform: translateY(25px);
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+    37% {
+      transform: translateY(-22px);
+      opacity: 1;
+    }
+    45% {
+      transform: translateY(-22px);
+      opacity: 1;
+    }
+    58% {
+      transform: translateY(8px) rotate(-10deg);
+      opacity: 1;
+    }
+    83% {
+      transform: translateY(-6px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .container--flex {
+    display: block;
+  }
+
+  #menu-btn {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    height: 65px;
+    right: 20px;
+  }
+  #menu-btn:before, #menu-btn:after {
+    content: '';
+    width: 100%;
+    height: 8px;
+    background-color: #FFF;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+  }
+  #menu-btn:before {
+    transform-origin: left center;
+  }
+  #menu-btn:after {
+    right: 0;
+    top: 20px;
+    transform-origin: right center;
+  }
+  #menu-btn .menu__text {
+    color: #FFF;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    top: 40px;
+  }
+  #menu-btn:hover {
+    cursor: pointer;
+  }
+  #menu-btn.open:before {
+    animation: topBar_open 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #menu-btn.open:after {
+    animation: bottomBar_open 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #menu-btn.open .menu__text {
+    animation: menuLabel_open 1s ease-in;
+    animation-fill-mode: forwards;
+  }
+  #menu-btn.close:before {
+    animation: topBar_close 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #menu-btn.close:after {
+    animation: bottomBar_close 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #menu-btn.close .menu__text {
+    animation: menuLabel_close 1s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  /*********************************** Hamburger Menu Finish *******************************************/
 }
 
 /*# sourceMappingURL=main.css.map */

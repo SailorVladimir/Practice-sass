@@ -64,7 +64,6 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
     width: 20px;
     line-height: 0px;
     font-size: 0px;
@@ -101,7 +100,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 480px;
+    left: calc(50% - 470px);
     z-index: 1;
     [dir="rtl"] & {
         left: auto;
@@ -116,7 +115,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 480px;
+    right: calc(50% - 470px);
     
     [dir="rtl"] & {
         left: -25px;
